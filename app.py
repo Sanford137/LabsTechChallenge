@@ -7,6 +7,9 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route('/skm2159', methods=['GET'])
+def sanford_miller():
+    return render_template('sanford-miller.html')
 
 if __name__ == '__main__':
     app.run()
